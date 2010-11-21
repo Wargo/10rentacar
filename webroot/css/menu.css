@@ -1,0 +1,16 @@
+.main_menu {
+    list-style: none;
+}
+.main_menu li {
+    display: inline;
+    float: left;
+}
+.main_menu li a {
+    display: block;
+    padding: 10px;
+    margin: 0px 10px;
+    color: #FFF;
+}
+.main_menu li a:hover,
+.main_menu li a.selected {
+}
