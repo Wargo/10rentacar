@@ -1,28 +1,28 @@
 <div class="cars index">
-	<h2><?php __('Flota');?></h2>
+	<h2><?php __('Noticias');?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<tr>
 			<th><?php echo $this->Paginator->sort('id');?></th>
 			<th><?php echo $this->Paginator->sort(__('Título', true), 'title');?></th>
 			<th><?php echo $this->Paginator->sort(__('Texto', true), 'text');?></th>
-			<th><?php echo $this->Paginator->sort(__('Creado', true), 'created');?></th>
-			<th><?php echo $this->Paginator->sort(__('Modificado', true), 'modified');?></th>
+			<th><?php echo $this->Paginator->sort(__('Creada', true), 'created');?></th>
+			<th><?php echo $this->Paginator->sort(__('Modificada', true), 'modified');?></th>
 	</tr>
 	<?php
 	$i = 0;
-	foreach ($cars as $car):
-        extract($car);
+	foreach ($news as $new):
+        extract($new);
 		$class = null;
 		if ($i++ % 2 == 0) {
 			$class = ' class="altrow"';
 		}
 	?>
 	<tr<?php echo $class;?>>
-		<td><?php echo $Car['id']; ?>&nbsp;</td>
-		<td><?php echo $html->link($Car['title'], array('controller' => 'cars', 'action' => 'view', $Car['id'])); ?>&nbsp;</td>
-		<td><?php echo $Car['text']; ?>&nbsp;</td>
-		<td><?php echo $Car['created']; ?>&nbsp;</td>
-		<td><?php echo $Car['modified']; ?>&nbsp;</td>
+		<td><?php echo $News['id']; ?>&nbsp;</td>
+		<td><?php echo $html->link($News['title'], array('controller' => 'news', 'action' => 'view', $News['id'])); ?>&nbsp;</td>
+		<td><?php echo $News['text']; ?>&nbsp;</td>
+		<td><?php echo $News['created']; ?>&nbsp;</td>
+		<td><?php echo $News['modified']; ?>&nbsp;</td>
 	</tr>
 <?php endforeach; ?>
 	</table>
