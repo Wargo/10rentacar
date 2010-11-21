@@ -33,8 +33,8 @@
 <body>
 	<div id="container">
 		<div id="header">
-			<h1><?php echo __('10rentacar', true); ?></h1>
-            <?php echo $this->element('menu'); ?>
+			<h1><?php echo __('Panel de gestión 10rentacar', true); ?></h1>
+            <?php echo $this->element('panel/menu'); ?>
 		</div>
 		<div id="content">
 

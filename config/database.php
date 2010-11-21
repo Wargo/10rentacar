@@ -8,7 +8,7 @@ class DATABASE_CONFIG {
 		'login' => 'root',
 		'password' => 'guille',
 		'database' => '10rentacar',
-                'encoding' => 'utf8',
+        'encoding' => 'utf8',
 	);
 }
 ?>
