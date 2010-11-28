@@ -1,16 +1,29 @@
 .main_menu {
+	font-size: 1.1em;
     list-style: none;
+	padding: 0px;
+	margin: 0px;
+	position: absolute;
+	right: 0px;
+	top: 21px;
 }
 .main_menu li {
     display: inline;
     float: left;
 }
 .main_menu li a {
+	background: url(../img/bg_button.png) repeat-x;
     display: block;
-    padding: 10px;
-    margin: 0px 10px;
-    color: #FFF;
+    padding: 7px 10px;
+    margin: 0px 5px;
+    color: #CCC;
+	-moz-border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	border-radius: 5px 5px 0px 0px;
+	text-decoration: none;
 }
 .main_menu li a:hover,
 .main_menu li a.selected {
+	background: url(../img/bg_selected_button.png) repeat-x;
+    color: #333;
 }

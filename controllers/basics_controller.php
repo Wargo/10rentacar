@@ -29,4 +29,11 @@ class BasicsController extends AppController {
 		}
 	}
 
+	function search() {
+		if($this->Basic->save($this->data)) {
+			$this->redirect('/');
+		}
+		$this->render('home');
+	}
+
 }

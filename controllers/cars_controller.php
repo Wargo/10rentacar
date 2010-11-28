@@ -5,7 +5,7 @@ class CarsController extends AppController {
 
 	function index() {
 		$this->Car->recursive = 0;
-        $conditions['active'] = 1;
+		$conditions['active'] = 1;
 		$this->set('cars', $this->paginate('Car', $conditions));
 	}
 
@@ -14,23 +14,23 @@ class CarsController extends AppController {
 			$this->Session->setFlash(__('Datos inválidos', true));
 			$this->redirect(array('action' => 'index'));
 		}
-        $car = $this->Car->find('first', array(
-            'conditions' => array(
-                'active' => 1,
-                'id' => $id
-            )
-        ));
-        $this->set(compact('car'));
+		$car = $this->Car->find('first', array(
+			'conditions' => array(
+				'active' => 1,
+				'id' => $id
+			)
+		));
+		$this->set(compact('car'));
 	}
 
 	function admin_index() {
-        $this->layout = 'panel';
+		$this->layout = 'panel';
 		$this->Car->recursive = 0;
 		$this->set('cars', $this->paginate());
 	}
 
 	function admin_view($id = null) {
-        $this->layout = 'panel';
+		$this->layout = 'panel';
 		if (!$id) {
 			$this->Session->setFlash(__('Datos inválidos', true));
 			$this->redirect(array('action' => 'index'));
@@ -38,20 +38,20 @@ class CarsController extends AppController {
 		$this->set('car', $this->Car->read(null, $id));
 	}
 
-    function admin_add() {
-        $this->admin_edit();
-        $this->render('admin_edit');
-    }
+	function admin_add() {
+		$this->admin_edit();
+		$this->render('admin_edit');
+	}
 
 	function admin_edit($id = null) {
-        $this->layout = 'panel';
-        $this->set(compact('id'));
+		$this->layout = 'panel';
+		$this->set(compact('id'));
 		if (!empty($this->data)) {
-            if($id) {
-                $this->Car->id = $id;
-            } else {
-                $this->Car->create();
-            }
+			if($id) {
+				$this->Car->id = $id;
+			} else {
+				$this->Car->create();
+			}
 			if ($this->Car->save($this->data)) {
 				$this->Session->setFlash(__('Datos guardados', true));
 				$this->redirect(array('action' => 'index'));
@@ -65,7 +65,7 @@ class CarsController extends AppController {
 	}
 
 	function admin_delete($id = null) {
-        $this->layout = 'panel';
+		$this->layout = 'panel';
 		if (!$id) {
 			$this->Session->setFlash(__('Datos inválidos', true));
 			$this->redirect(array('action'=>'index'));

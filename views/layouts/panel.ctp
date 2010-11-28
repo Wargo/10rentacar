@@ -25,9 +25,7 @@
 	<?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css('cake.generic');
-
-		echo $scripts_for_layout;
+		echo $this->element('css_panel');
 	?>
 </head>
 <body>
@@ -48,5 +46,6 @@
 		</div>
 	</div>
 	<?php echo $this->element('sql_dump'); ?>
+	<?php echo $this->element('js_panel'); ?>
 </body>
 </html>

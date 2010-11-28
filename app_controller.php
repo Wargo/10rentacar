@@ -31,4 +31,16 @@
  * @subpackage    cake.app
  */
 class AppController extends Controller {
+	var $helpers = array(
+		'Session',
+		'Time',
+		'paginator',
+		'Mi.MiForm',
+		'Mi.MiHtml',
+		'MiAsset.Asset',
+		'Funciones',
+	);
+	var $components = array(
+		'DebugKit.Toolbar',
+	);
 }

@@ -1,4 +1,103 @@
 body {
-    width: 940px;
+    width: 924px;
     margin: 0 auto;
+	background-color: #000;
+	font-family: arial;
+	font-size: 13px;
+}
+
+a img {
+	border: none;
+}
+
+h3 {
+	margin: 3px 0px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+#content {
+	padding: 15px;
+	background-color: #FFF;
+	margin-top: 52px;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+
+.logo {
+	position: absolute;
+	top: -10px;
+	left: -100px;
+}
+
+#header {
+	position: relative;
+	margin-top: 15px;
+}
+
+.home {
+	background: url(../img/bg_home.jpg) no-repeat;
+	width: 865px;
+	height: 243px;
+	padding: 15px;
+}
+
+.search {
+	position: relative;
+}
+.search_1,
+.search_2 {
+	position: absolute;
+	width: 220px;
+	top: 40px;
+}
+.search_1 {
+	right: 400px;
+}
+.search_2 {
+	right: 100px;
+}
+.form_search select {
+	width: 200px;
+}
+.form_search select.hora {
+	width: 50px;
+}
+.form_search input[type="submit"] {
+	margin-top: 15px;
+}
+
+.error {
+	border: solid 1px #FF0000;
+	background-color: #FFCCCC;
+	padding: 2px;
+	margin: 2px 0px;
+}
+.error-message {
+	color: #FF0000;
 }
