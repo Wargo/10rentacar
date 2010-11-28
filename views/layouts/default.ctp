@@ -23,7 +23,7 @@
 
 		</div>
 		<div id="footer">
-            <?php echo $html->link(__('10rentacar.es', true), '/'); ?>
+            <?php echo $this->element('footer'); ?>
 		</div>
 	</div>
 	<?php echo $this->element('sql_dump'); ?>

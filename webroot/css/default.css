@@ -11,7 +11,9 @@ a img {
 }
 
 h3 {
-	margin: 3px 0px;
+	font-size: 1.9em;
+	color: #888;
+	margin: 0px 0px;
 }
 
 .left {
@@ -60,21 +62,34 @@ html[xmlns] .clearfix {
 	margin-top: 15px;
 }
 
+a {
+	color: #ff7e17;
+	text-decoration: none;
+}
+
+#footer {
+	margin: 20px 0px;
+	padding: 15px;
+	text-align: center;
+	color: #666;
+	background: #FFF;
+}
+
 .home {
 	background: url(../img/bg_home.jpg) no-repeat;
 	width: 865px;
-	height: 243px;
 	padding: 15px;
 }
 
 .search {
+	height: 280px;
 	position: relative;
 }
 .search_1,
 .search_2 {
 	position: absolute;
 	width: 220px;
-	top: 40px;
+	top: 50px;
 }
 .search_1 {
 	right: 400px;
@@ -100,4 +115,15 @@ html[xmlns] .clearfix {
 }
 .error-message {
 	color: #FF0000;
+}
+
+.block {
+	float: left;
+	width: 255px;
+	height: 160px;
+	padding: 15px;
+	border-right: solid 1px #999;
+}
+.block.last {
+	border-right: none;
 }

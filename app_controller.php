@@ -30,6 +30,7 @@
  * @package       cake
  * @subpackage    cake.app
  */
+App::import('Vendor', 'Mi.MiCache');
 class AppController extends Controller {
 	var $helpers = array(
 		'Session',
@@ -42,5 +43,6 @@ class AppController extends Controller {
 	);
 	var $components = array(
 		'DebugKit.Toolbar',
+		'Session',
 	);
 }

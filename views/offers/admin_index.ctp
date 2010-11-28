@@ -6,7 +6,7 @@
 			<th><?php echo $this->Paginator->sort(__('Título', true), 'title');?></th>
 			<th><?php echo $this->Paginator->sort(__('Texto', true), 'text');?></th>
 			<th><?php echo $this->Paginator->sort(__('Creada', true), 'created');?></th>
-			<th><?php echo $this->Paginator->sort(__('Modificada', true), 'modified');?></th>
+			<th><?php echo $this->Paginator->sort(__('Visible', true), 'active');?></th>
 			<th class="actions"><?php __('Acciones');?></th>
 	</tr>
 	<?php
@@ -23,7 +23,7 @@
 		<td><?php echo $Offer['title']; ?>&nbsp;</td>
 		<td><?php echo $Offer['text']; ?>&nbsp;</td>
 		<td><?php echo $Offer['created']; ?>&nbsp;</td>
-		<td><?php echo $Offer['modified']; ?>&nbsp;</td>
+		<td><?php echo $Offer['active']?__('Sí', true):__('No', true); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('Ver', true), array('action' => 'view', $Offer['id'])); ?>
 			<?php echo $this->Html->link(__('Editar', true), array('action' => 'edit', $Offer['id'])); ?>

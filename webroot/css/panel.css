@@ -1,0 +1,32 @@
+.panel_menu {
+	font-size: 1.1em;
+    list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+.panel_menu li {
+    display: inline;
+    float: left;
+}
+.panel_menu li a {
+    display: block;
+    padding: 7px 10px;
+    margin: 0px 5px;
+    color: #FFF;
+	-moz-border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	border-radius: 5px 5px 0px 0px;
+	text-decoration: none;
+}
+.panel_menu li a:hover,
+.panel_menu li a.selected {
+    color: #333;
+	background: #FFF;
+}
+
+input[type="submit"] {
+	cursor: pointer;
+}
+input[type="submit"] {
+	cursor: pointer;
+}

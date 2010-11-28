@@ -300,3 +300,16 @@
  *
  */
 	Cache::config('default', array('engine' => 'File'));
+
+/**
+* Store served assets in the webroot?
+*/
+Configure::write('MiCompressor.store', true);
+/**
+* Use .min.js and .min.css ?
+*/
+Configure::write('MiCompressor.minify', false);
+/**
+* Optimize number of css and js files?
+*/
+Configure::write('MiCompressor.concat', false);

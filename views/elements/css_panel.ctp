@@ -2,6 +2,7 @@
 $css = array(
 	'cake.generic',
 	'menu',
+	'panel',
 	'static',
 );
 
