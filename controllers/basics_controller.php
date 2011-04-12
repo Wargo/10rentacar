@@ -20,7 +20,7 @@ class BasicsController extends AppController {
 					'subject' => $this->data['Form']['subject'],
 					'data' => $this->data['Form']
 				);
-                $Mail->send_email('send_form', $data);
+			$Mail->send_email('send_form', $data);
 				$this->Session->setFlash(__('Formulario enviado correctamente', true));
 				$this->redirect('/');
 			} else {
